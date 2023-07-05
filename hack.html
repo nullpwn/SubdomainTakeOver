@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: black;
+            overflow: hidden;
+        }
+
+        h1, h2 {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h1 {
+            color: lime;
+            text-shadow: 0 0 10px lime;
+            font-size: 3em;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        h2 {
+            color: red;
+            text-shadow: 0 0 10px red;
+            font-size: 2em;
+            animation: flicker 1s infinite alternate;
+            top: 60%;
+        }
+
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                text-shadow: 0 0 4px, 0 0 11px, 0 0 19px, 0 0 40px;
+            }
+            20%, 24%, 55% {    
+                text-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>YOU HAVE BEEN HACKED</h1>
+    <h2>HACKED BY NU11PWN</h2>
+</body>
+</html>
